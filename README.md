@@ -8,7 +8,7 @@ This is an official PyTorch implementation of the paper **On the Diversity and R
 
 - We delineate three key objectives for effective dataset distillation on large-scale high-resolution datasets: realism, diversity, and efficiency.
 - We introduce the compression rate of information and a realism score backed by $\mathcal{V}$-information theory, together with an optimization-free efficient paradigm, to condense diverse and realistic data.
-- Extensive experiments substantiate the effectiveness of our method: it can distill a dataset with $\texttt{IPC} = 10$ from the complete ImageNet-1K in just 7 minutes and achieve a notable $42\%$ top-1 validation accuracy with ResNet-18, significantly surpassing other SOTA methods.
+- Extensive experiments substantiate the effectiveness of our method: it can distill the full ImageNet-1K to a small dataset comprising 10 images per class within 7 minutes, achieving a notable 42% top-1 accuracy with ResNet-18 on a single RTX-4090 GPU (while the SOTA only achieves 21% but requires 6 hours).
 
 ## Abstract
 
@@ -17,7 +17,7 @@ This is an official PyTorch implementation of the paper **On the Diversity and R
 class="center">
 </p>
 
-Contemporary machine learning requires training large neural networks on massive datasets and thus faces the challenges of high computational demands. Dataset distillation, as a recent emerging strategy, aims to compress real-world datasets for efficient training. However, this line of research currently struggle with large-scale and high-resolution datasets, hindering its practicality and feasibility. To this end, we re-examine the existing dataset distillation methods and identify three properties required for large-scale real-world applications, namely, realism, diversity, and efficiency. As a remedy, we propose RDED, a novel computationally-efficient yet effective data distillation paradigm, to enable both diversity and realism of the distilled data. Extensive empirical results over various neural architectures and datasets demonstrate the advancement of RDED: we can distill the full ImageNet-1K to a small dataset comprising 10 images per class within 7 minutes, achieving a notable 42% top-1 accuracy with ResNet-18 on a single RTX-4090 GPU (while the SOTA only achieves 21% but requires 6 hours).
+Contemporary machine learning requires training large neural networks on massive datasets and thus faces the challenges of high computational demands. Dataset distillation, as a recent emerging strategy, aims to compress real-world datasets for efficient training. However, this line of research currently struggle with large-scale and high-resolution datasets, hindering its practicality and feasibility. To this end, we re-examine the existing dataset distillation methods and identify three properties required for large-scale real-world applications, namely, realism, diversity, and efficiency. As a remedy, we propose RDED, a novel computationally-efficient yet effective data distillation paradigm, to enable both diversity and realism of the distilled data.
 
 ## TODOs
 - [ ] Give the format for dataset structuring.
