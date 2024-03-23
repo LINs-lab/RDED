@@ -42,26 +42,26 @@ bash ./scripts/imagenet-1k_10ipc_resnet-18_to_resnet-18_cr5.sh
 ```
 
 ### Pre-trained Models
+Following [SRe$^2$L](https://github.com/VILA-Lab/SRe2L), we adapt official [Torchvision code](https://github.com/pytorch/vision/tree/main/references/classification) to train the observer models from scratch.
+All our pre-trained observer models listed below are available at [link](https://drive.google.com/drive/folders/1HmrheO6MgX453a5UPJdxPHK4UTv-4aVt?usp=drive_link).
 
-All pre-trained models above are available at [link](https://drive.google.com/drive/folders/1HmrheO6MgX453a5UPJdxPHK4UTv-4aVt?usp=drive_link).
-
-| **Dataset**        | **Backbone**          | **Top1**  | **size** |
-| ------------------------ | --------------------------- | --------------- | -------------- |
-| **CIFAR10**        | **resnet18_modified** | **93.86** | **32**   |
-| **CIFAR10**        | **conv3**             | **82.24** | **32**   |
-| **CIFAR100**       | **resnet18_modified** | **72.27** | **32**   |
-| **CIFAR100**       | **conv3**             | **61.27** | **32**   |
-| **Tiny-ImageNet**  | **resnet18_modified** | **61.98** | **64**   |
-| **Tiny-ImageNet**  | **conv4**             | **49.73** | **64**   |
-| **ImageNet-Nette** | **resnet18**          | **90.00** | **224**  |
-| **ImageNet-Nette** | **conv5**             | **89.60** | **128**  |
-| **ImageNet-Woof**  | **resnet18**          | **75.00** | **224**  |
-| **ImageNet-Woof**  | **conv5**             | **67.40** | **128**  |
-| **ImageNet-10**    | **resnet18**          | **87.40** | **224**  |
-| **ImageNet-10**    | **conv5**             | **85.4**  | **128**  |
-| **ImageNet-100**   | **resnet18**          | **83.40** | **224**  |
-| **ImageNet-100**   | **conv6**             | **72.82** | **128**  |
-| **ImageNet-1k**    | **conv4**             | **43.6**  | **64**   |
+| **Dataset**        | **Backbone**            | **Top1-accuracy** | **Input Size**       |
+| ------------------ | ----------------------- | ----------------- | -------------------- |
+| **CIFAR10**        | **ResNet18 (modified)** | **93.86**         | **32 $\times$ 32**   |
+| **CIFAR10**        | **Conv3**               | **82.24**         | **32 $\times$ 32**   |
+| **CIFAR100**       | **ResNet18 (modified)** | **72.27**         | **32 $\times$ 32**   |
+| **CIFAR100**       | **Conv3**               | **61.27**         | **32 $\times$ 32**   |
+| **Tiny-ImageNet**  | **ResNet18 (modified)** | **61.98**         | **64 $\times$ 64**   |
+| **Tiny-ImageNet**  | **Conv4**               | **49.73**         | **64 $\times$ 64**   |
+| **ImageNet-Nette** | **ResNet18**            | **90.00**         | **224 $\times$ 224** |
+| **ImageNet-Nette** | **Conv5**               | **89.60**         | **128 $\times$ 224** |
+| **ImageNet-Woof**  | **ResNet18**            | **75.00**         | **224 $\times$ 224** |
+| **ImageNet-Woof**  | **Conv5**               | **67.40**         | **128 $\times$ 128** |
+| **ImageNet-10**    | **ResNet18**            | **87.40**         | **224 $\times$ 224** |
+| **ImageNet-10**    | **Conv5**               | **85.4**          | **128 $\times$ 128** |
+| **ImageNet-100**   | **ResNet18**            | **83.40**         | **224 $\times$ 224** |
+| **ImageNet-100**   | **Conv6**               | **72.82**         | **128 $\times$ 128** |
+| **ImageNet-1k**    | **Conv4**               | **43.6**          | **64 $\times$ 64**   |
 
 ## Bibliography
 
