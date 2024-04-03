@@ -45,40 +45,39 @@ bash ./scripts/imagenet-1k_10ipc_resnet-18_to_resnet-18_cr5.sh
 Following [SRe$^2$L](https://github.com/VILA-Lab/SRe2L), we adapt official [Torchvision code](https://github.com/pytorch/vision/tree/main/references/classification) to train the observer models from scratch.
 All our pre-trained observer models listed below are available at [link](https://drive.google.com/drive/folders/1HmrheO6MgX453a5UPJdxPHK4UTv-4aVt?usp=drive_link).
 
-| **Dataset**        | **Backbone**            | **Top1-accuracy** | **Input Size**       |
-| ------------------ | ----------------------- | ----------------- | -------------------- |
-| **CIFAR10**        | **ResNet18 (modified)** | **93.86**         | **32 $\times$ 32**   |
-| **CIFAR10**        | **Conv3**               | **82.24**         | **32 $\times$ 32**   |
-| **CIFAR100**       | **ResNet18 (modified)** | **72.27**         | **32 $\times$ 32**   |
-| **CIFAR100**       | **Conv3**               | **61.27**         | **32 $\times$ 32**   |
-| **Tiny-ImageNet**  | **ResNet18 (modified)** | **61.98**         | **64 $\times$ 64**   |
-| **Tiny-ImageNet**  | **Conv4**               | **49.73**         | **64 $\times$ 64**   |
-| **ImageNet-Nette** | **ResNet18**            | **90.00**         | **224 $\times$ 224** |
-| **ImageNet-Nette** | **Conv5**               | **89.60**         | **128 $\times$ 224** |
-| **ImageNet-Woof**  | **ResNet18**            | **75.00**         | **224 $\times$ 224** |
-| **ImageNet-Woof**  | **Conv5**               | **67.40**         | **128 $\times$ 128** |
-| **ImageNet-10**    | **ResNet18**            | **87.40**         | **224 $\times$ 224** |
-| **ImageNet-10**    | **Conv5**               | **85.4**          | **128 $\times$ 128** |
-| **ImageNet-100**   | **ResNet18**            | **83.40**         | **224 $\times$ 224** |
-| **ImageNet-100**   | **Conv6**               | **72.82**         | **128 $\times$ 128** |
-| **ImageNet-1k**    | **Conv4**               | **43.6**          | **64 $\times$ 64**   |
+| **Dataset**    | **Backbone**        | **Top1-accuracy** | **Input Size**   |
+| -------------- | ------------------- | ----------------- | ---------------- |
+| CIFAR10        | ResNet18 (modified) | 93.86             | 32 $\times$ 32   |
+| CIFAR10        | Conv3               | 82.24             | 32 $\times$ 32   |
+| CIFAR100       | ResNet18 (modified) | 72.27             | 32 $\times$ 32   |
+| CIFAR100       | Conv3               | 61.27             | 32 $\times$ 32   |
+| Tiny-ImageNet  | ResNet18 (modified) | 61.98             | 64 $\times$ 64   |
+| Tiny-ImageNet  | Conv4               | 49.73             | 64 $\times$ 64   |
+| ImageNet-Nette | ResNet18            | 90.00             | 224 $\times$ 224 |
+| ImageNet-Nette | Conv5               | 89.60             | 128 $\times$ 224 |
+| ImageNet-Woof  | ResNet18            | 75.00             | 224 $\times$ 224 |
+| ImageNet-Woof  | Conv5               | 67.40             | 128 $\times$ 128 |
+| ImageNet-10    | ResNet18            | 87.40             | 224 $\times$ 224 |
+| ImageNet-10    | Conv5               | 85.4              | 128 $\times$ 128 |
+| ImageNet-100   | ResNet18            | 83.40             | 224 $\times$ 224 |
+| ImageNet-100   | Conv6               | 72.82             | 128 $\times$ 128 |
+| ImageNet-1k    | Conv4               | 43.6              | 64 $\times$ 64   |
 
 ## Bibliography
 
 If you find this repository helpful for your project, please consider citing our work:
 
 ```
-@article{sun2023diversity,
+@InProceedings{sun2023diversity,
   title={On the Diversity and Realism of Distilled Dataset: An Efficient Dataset Distillation Paradigm},
   author={Sun, Peng and Shi, Bei and Yu, Daiwei and Lin, Tao},
-  journal={arXiv preprint arXiv:2312.03526},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2023}
 }
 ```
 
 ## Reference
 
-Our code has referred previous work:
-
+Our code has referred to previous work:
 - [Squeeze, Recover and Relabel: Dataset Condensation at ImageNet Scale From A New Perspective](https://github.com/VILA-Lab/SRe2L)
 - [Dataset Condensation via Efficient Synthetic-Data Parameterization](https://github.com/snu-mllab/Efficient-Dataset-Condensation)
