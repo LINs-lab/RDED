@@ -68,11 +68,11 @@ All our pre-trained observer models listed below are available at [link](https:/
 If you find this repository helpful for your project, please consider citing our work:
 
 ```
-@InProceedings{sun2023diversity,
+@InProceedings{sun2024diversity,
   title={On the Diversity and Realism of Distilled Dataset: An Efficient Dataset Distillation Paradigm},
   author={Sun, Peng and Shi, Bei and Yu, Daiwei and Lin, Tao},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2023}
+  year={2024}
 }
 ```
 
