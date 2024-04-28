@@ -21,7 +21,7 @@ Contemporary machine learning requires training large neural networks on massive
 
 ## TODOs
 
-- [ ] Give the format for dataset structuring.
+- [x] Give the format for dataset structuring.
 - [ ] Separate the processes of validation and relabeling.
 
 ## Usage
@@ -62,6 +62,34 @@ All our pre-trained observer models listed below are available at [link](https:/
 | ImageNet-100   | ResNet18            | 83.40             | 224 $\times$ 224 |
 | ImageNet-100   | Conv6               | 72.82             | 128 $\times$ 128 |
 | ImageNet-1k    | Conv4               | 43.6              | 64 $\times$ 64   |
+
+### Storage Format for Raw Datasets
+
+All our raw datasets, including those like ImageNet-1K and CIFAR10, store their training and validation components in the following format to facilitate uniform reading using a standard dataset class method:
+
+```
+/path/to/dataset/
+├── 00000/
+│   ├── image1.jpg
+│   ├── image2.jpg
+│   ├── image3.jpg
+│   ├── image4.jpg
+│   └── image5.jpg
+├── 00001/
+│   ├── image1.jpg
+│   ├── image2.jpg
+│   ├── image3.jpg
+│   ├── image4.jpg
+│   └── image5.jpg
+├── 00002/
+│   ├── image1.jpg
+│   ├── image2.jpg
+│   ├── image3.jpg
+│   ├── image4.jpg
+│   └── image5.jpg
+```
+
+This organizational structure ensures compatibility with the unified dataset class, streamlining the process of data handling and accessibility.
 
 ## Bibliography
 
